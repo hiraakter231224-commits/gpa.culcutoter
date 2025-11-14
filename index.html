@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">GPA</div>
+      <div>
+        <h1>GPA Calculator</h1>
+        <p class="lead">Enter your marks to calculate GPA easily.</p>
+      </div>
+    </header>
+
+    <main class="card">
+      <div class="controls">
+        <button id="addRowBtn" class="btn">+ Add Course</button>
+        <button id="calcBtn" class="btn ghost">Calculate GPA</button>
+        <button id="resetBtn" class="btn ghost">Reset</button>
+      </div>
+
+      <table id="courseTable">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Point</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+
+      <div class="summary">
+        <div class="stat">
+          <div class="muted">Total Courses</div>
+          <div id="totalCourses" class="gpa-value">0</div>
+        </div>
+        <div class="stat">
+          <div class="muted">Average Point</div>
+          <div id="avgPoint" class="gpa-value">0.00</div>
+        </div>
+        <div class="stat">
+          <div class="muted">Final GPA</div>
+          <div id="gpaResult" class="gpa-value">0.00</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
